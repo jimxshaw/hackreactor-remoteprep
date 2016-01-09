@@ -1,0 +1,61 @@
+body {
+      background-color: green;
+      color: yellow;
+}
+
+h1 {
+  border: 1px solid #ccc;
+  /* Padding is the space between the element and the border. */
+  padding: 20px;
+  /* Margin is the space between the border and the next box. */
+  margin: 40px;
+}
+
+h2 {
+  font-family: courier;
+  font-size: 2em;
+  font-weight: 100;
+}
+
+p {
+  background-color: gray;
+}
+
+#header {
+  background-color: red;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+}
+
+.leadin {
+  font-size: 30px;
+  color: #000;
+}
+
+#container {
+  /* Using max-width adjusts the elements appropriately when the window shrinks. */
+  max-width: 960px;
+  margin: 0 auto;
+  /* Position relative means it doesn't overlap with other elements on the page. */
+  position: relative;
+}
+
+#nav {
+  background-color: white;
+  color: green;
+}
+
+a {
+  background-color: yellow;
+  color: green;
+}
+
+/* Hover is a pseudo class of anchor. */
+a:hover {
+  background-color: blue;
+}
+
+a:visited {
+  color: purple;
+}
