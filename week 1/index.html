@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>First JS Enabled Page</title>
+</head>
+
+<body>
+  <h1>First JavaScript Enabled Page</h1>
+
+  <div>
+    <p id="name"></p>
+    <p>
+      It's great to have someone from <span id="hometown"></span>. Must be a lovely place.
+    </p>
+  </div>  
+
+
+<script>
+  var visitorName = prompt('Hello! Please enter your name.');
+  var hometown = prompt('Where is your home town?');
+  document.getElementById('name').innerHTML = "Hello " + visitorName + ", welcome to the site!";
+  document.getElementById('hometown').innerHTML = hometown;
+
+
+</script>
+</body>
+</html>
