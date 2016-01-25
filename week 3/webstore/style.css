@@ -1,0 +1,37 @@
+.book {
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 3px;
+  width: 100%;
+  float:left;
+  margin-bottom: 20px;
+  list-style-type:none;
+  background-color:white;
+}
+
+.book p {
+  margin: 0px;
+}
+
+.booktitle {
+  padding: 15px;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+.book img {
+  width: 150px;
+  float: left;
+  padding-right: 20px;
+}
+.album {
+  border-style: solid;
+  border-width: 5px;
+  height: 100%;
+}
+
+.albumtitle {
+  padding: 15px;
+  text-decoration: underline;
+  font-size: 25px;
+}
