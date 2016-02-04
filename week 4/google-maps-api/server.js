@@ -2,6 +2,8 @@ var express = require('express');
 
 var app = express();
 
+var path = require('path');
+
 var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
@@ -21,6 +23,10 @@ app.use(bodyParser.urlencoded({
 // cities.js, the function uses app as an argument for the HTTP methods 
 // like app.get, app.post, app.put, app.delete.  
 var cities = require('./routes/cities.js')(app);
+
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/index.html'));
+});
 
 var server = app.listen(3000, function() {
   console.log('Server running at http://127.0.0.1:3000/');
