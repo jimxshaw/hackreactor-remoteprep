@@ -10,6 +10,7 @@ module.exports = function(app) {
 
     /* Create */
     app.post('/city', function (req, res) {
+        console.log(req.body);
         var newCity = new City(req.body);
         newCity.save(function(err) {
             if (err) {

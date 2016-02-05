@@ -33,8 +33,8 @@
 </head>
 <body>
   <div id="floating-panel">
-  <form action="/city" method="post" enctype="multipart/form-data">
-    <input id="address" type="textbox" value="" placeholder="Enter a city..." name="">
+  <form action="/city" method="post" enctype="application/json; charset=UTF-8">
+    <input id="address" type="textbox" value="" placeholder="Enter a city..." name="city">
     <input id="submit" type="button" value="Geocode">
   </form>
   </div>
@@ -44,7 +44,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8ow_45a6Evhl4PNCyQuNthA0zGrYCn_Y&signed_in=true&callback=initMap"
       async defer></script>
-  <script src="routes/cities.js"></script>
+  <!-- <script src="routes/cities.js"></script> -->
   <script>
   var initMap = function() {
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -70,7 +70,7 @@
           map: resultsMap,
           position: results[0].geometry.location
         });
-        console.log(results);
+        //console.log(results);
         var city = results[0].address_components[0].short_name;
         var state = results[0].address_components[2].short_name;
         var lat = results[0].geometry.location.lat();
