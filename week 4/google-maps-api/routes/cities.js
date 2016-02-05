@@ -1,7 +1,12 @@
 var _ = require('lodash');
+var path = require('path');
 var City = require('../models/city.js');
 
 module.exports = function(app) {
+
+    app.get('/', function(req, res) {
+      res.sendFile(path.resolve(__dirname + '/..' + '/index.html'));
+    });
 
     /* Create */
     app.post('/city', function (req, res) {
