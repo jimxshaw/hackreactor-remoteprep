@@ -24,16 +24,6 @@ app.use(bodyParser.urlencoded({
 // like app.get, app.post, app.put, app.delete.  
 var cities = require('./routes/cities.js')(app);
 
-// app.get('/', function(req, res) {
-//   res.sendFile(path.join(__dirname + '/index.html'));
-// });
-
-// app.post('/city', function(req, res) {
-//   cities(req);
-// });
-
-//app.use('/city', cities);
-
 var server = app.listen(3000, function() {
   console.log('Server running at http://127.0.0.1:3000/');
 });
